@@ -10,7 +10,7 @@ const Home = async () => {
     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API_KEY}`
   );
   const movie = await data.json();
-  console.log(movie.results);
+  // console.log(movie.results);
   return (
     <div className='list-container'>
       <h1 className='title'>Movie Maniac</h1>
